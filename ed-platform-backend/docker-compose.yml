@@ -1,0 +1,16 @@
+version: '2'
+services: 
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile-db
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    volumes: 
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on: 
+      - db

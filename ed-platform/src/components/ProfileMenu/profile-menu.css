@@ -1,0 +1,61 @@
+@import "../../common/theme.css";
+
+.profile-menu {
+  & menu {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in .5s;
+    top: 65px;
+    box-shadow: 0 0 5px #ccc;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0 15px;
+
+    & .menu-item {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+
+      &:hover {
+        background: var(--silver);
+      }
+    }
+
+    &.visible {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  & .profile-link {
+    color: var(--asbestos);
+    margin-bottom: -40px;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+
+    & .profile-name {
+      display: inline-block;
+      margin: 8px 10px 0 0;
+    }
+
+    & .avatar {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px 8px 0;
+      border-radius: 20px;
+      background: #ccc;
+    }
+  }
+}

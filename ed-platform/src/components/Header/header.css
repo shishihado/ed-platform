@@ -1,0 +1,15 @@
+@import '../../common/theme.css';
+
+.page-header {
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+
+  & .logo {
+    margin: 10px;
+    line-height: 55px;
+    font-size: 1rem;
+    color: var(--asbestos);
+    text-shadow: 0 0 0 1px #000000;
+  }
+}

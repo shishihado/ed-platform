@@ -1,0 +1,8 @@
+@import '../../common/theme.css';
+
+footer {
+  height: 40px;
+  background: var(--white);
+  color: var(--clouds);
+  font-size: 16px;
+}

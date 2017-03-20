@@ -1,0 +1,21 @@
+@import './theme.css';
+
+.panel {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+
+  &.arrow-center-top {
+    &::before {
+      position: absolute;
+      left: 45%;
+      display: block;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background: var(--white);
+      margin-top: -7.5px;
+      transform: rotate(45deg);
+    }
+  }
+}
